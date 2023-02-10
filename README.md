@@ -39,7 +39,6 @@ Mobile:
 - CSS Grid
 - Mobile-first workflow
 
-
 ## Author
 
 - Website - [Adarsh Gupta] https://adarsh78.github.io/QR-Code-Component/
