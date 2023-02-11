@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 *{
-    box-sizing: border-box;
+    border: 0;
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -9,63 +11,130 @@ html{
 }
 
 body{
-    background: hsl(220, 15%, 55%);
+    background: url(images/pattern-background-mobile.svg) no-repeat;
+    background-color:  hsl(225, 100%, 94%);
+    background-size: contain;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 800px;
+    min-height: 100vh;
 }
 
 main{
     background: hsl(0, 0%, 100%);
-    width: 23rem;
-    height: 34rem;
-    border-radius: 2rem;
-}
-
-.image-container {
-    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 21rem;
 }
 
 .image{
-    background: url(images/image-qr-code.png);
-    width: 21rem;
+    background: url(images/illustration-hero.svg) no-repeat;
+    background-size: contain;
+    width: 100%;
     height: 21rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: -10.2rem;
 }
 
-.text{
+.content{
     padding: 1rem;
 }
 
-h2{
-    font-size: 1.5rem;
+p, h1{
+    font-family: 'Red Hat Display', sans-serif ;
+}
+
+h1{
     text-align: center;
+    font-size: 1.2rem;
+    color: hsl(223, 47%, 23%)
+}
+
+.about > p{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    margin: 0 1.3rem;
+}
+
+.details{
+    background: hsl(225, 100%, 98%);
+    width: 100%;
+    height: 5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.details:hover{
+    background: hsl(229, 36%, 73%);
+}
+
+.plan > p{
+    color: hsl(223, 47%, 23%);
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0.6rem;
+}
+
+.plan > .rs{
+    color: hsl(224, 23%, 55%);
+}
+
+.chg{
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pay{
+    background: hsl(245, 75%, 52%);
+    width: 100%;
+    height: 4rem;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 15px 50px -15px hsl(245, 75%, 52%);;
+}
+
+.pay:hover{
+    background-color:hsl(245, 71%, 65%); 
+    cursor: pointer;
+}
+
+.pay > p{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
 
 }
 
-h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    color:  hsl(212, 13%, 38%);
-    margin: 1rem;
+.ccl{
     text-align: center;
+    color: hsl(224, 23%, 55%);
+    margin: 1rem 0 0.5rem 0;
 }
 
 .footer{
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 2%, 32%);
     text-align: center;
-    margin-top: 1rem;
     font-size: 0.9rem;
+    margin-top: 1rem;
+    font-weight: bold;
 }
 
 .footer a{
-    color: hsl(218, 44%, 22%);
-    font-weight: bold;
+    color: hsl(223, 93%, 11%);
     text-decoration: none;
+}
+
+@media (min-width : 600px) {
+
+    body{
+        background: url(images/pattern-background-desktop.svg) no-repeat;
+        background-color:  hsl(225, 100%, 94%);
+        background-size: contain;
+    }
 }
