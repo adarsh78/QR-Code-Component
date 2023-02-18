@@ -43,3 +43,6 @@ Mobile:
 
 - Website - [Adarsh Gupta] https://adarsh78.github.io/QR-Code-Component/
 - Frontend Mentor -  https://www.frontendmentor.io/profile/adarsh78
+- Twitter - [@adarsh_kgupta](https://twitter.com/adarsh_kgupta)
+
+
